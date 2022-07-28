@@ -1,170 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=, initial-scale=1.0" />
+        <title>WNL</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>WNL</title>
+        <!--Material icon-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
 
-    <!--Material icon-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" />
-    <link rel="stylesheet" href="./Wallet-account/style.css">
-</head>
-
-<body>
-    <div class="container">
-        <aside>
-            <div class="top">
-                <div class="logo">
-                    <h2><em>WNL</em></h2>
-                </div>
-
-                <div class="sidebar">
-                    <div class="sidebar-button">
-                        <button type="button" onclick="alert('You pressed the button!')">Send Money</button>
+    <body>
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <h2><em>WNL</em></h2>
                     </div>
-                    <a href="#">
-                        <span class="material-icons-outlined">home</span>
-                        <h3>Home</h3>
-                        <a href="#">
-                            <span class="material-icons-outlined">close_fullscreen</span>
+
+                    <div class="sidebar">
+                        <div class="sidebar-button">
+                            <button type="button">Send Money</button>
+                        </div>
+
+                        <a href="#" class="navlink">
+                            <span class="material-icons-outlined">home</span>
+                            <h3>Home</h3>
+                        </a>
+                        <a href="#" class="navlink">
+                            <span class="material-icons-outlined"
+                                >close_fullscreen</span
+                            >
                             <h3>Wallet</h3>
-                            <a href="#">
-                                <span class="material-icons-outlined">feed</span>
-                                <h3>History</h3>
-                                <a href="#">
-                                    <span class="material-icons-outlined">contacts</span>
-                                    <h3>investment</h3>
-                                    <a href="#">
-                                        <span class="material-icons-outlined">person</span>
-                                        <h3>My Account</h3>
-                                        <a href="#">
-                                            <i class="material-icons-outlined">waves</i>
-                                            <button type="button" onclick="">Log Out</button>
-                                        </a>
-                </div>
-            </div>
-        </aside>
-        <!--The main section next-->
-        <main>
-            <h6>DASHBOARD</h6>
+                        </a>
+                        <a href="#" class="navlink">
+                            <span class="material-icons-outlined">feed</span>
+                            <h3>History</h3>
+                        </a>
+                        <a href="#" class="navlink">
+                            <span class="material-icons-outlined"
+                                >contacts</span
+                            >
+                            <h3>Investment</h3>
+                        </a>
+                        <a href="#" class="navlink">
+                            <span class="material-icons-outlined">person</span>
+                            <h3>My Account</h3>
+                        </a>
 
-            <div class="investments">
-                <div class="active">
-                    <span class="material-icons-outlined">group</span>
-                    <div class="middle">
-                        <div class="right">
-                            <h3>ACTIVE INVESTMENT</h3>
-                            <h4>12</h4>
-                            <h4>N35,000</h4>
+                        <a href="#" class="sign-out">
+                            <img src="/images/wavy.png" />
+                            <img src="/images/wavy.png" />
+                            <img src="/images/wavy.png" />
+                            <img src="/images/wavy.png" />
+                            <button type="button" onclick="">Log Out</button>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <!--The main section next-->
+            <main>
+                <h6 class="Dashboard">DASHBOARD</h6>
+
+                <div class="investments">
+                    <div class="active">
+                        <span class="material-icons-outlined">group</span>
+                        <div class="middle">
+                            <div class="right">
+                                <h3>ACTIVE INVESTMENT</h3>
+                                <h4>12</h4>
+                                <div class="thirty-five">N35,000</div>
+                            </div>
+                            <small class="text-muted">View portfolio</small>
                         </div>
-                        <small class="text-muted">View portfolio</small>
                     </div>
-                  
-                </div>
-               
 
-                <!--ACtive investments above-->
-                <div class="wallet">
-                    <span class="material-icons-outlined">close_fullscreen</span>
-                    <div class="middle">
-                        <div class="right">
-                            <h3>WALLET BALANCE</h3>
-                            <h4>N1,113,750.00</h4>
+                    <!--ACtive investments above-->
+                    <div class="wallet">
+                        <span class="material-icons-outlined"
+                            >close_fullscreen</span
+                        >
+                        <div class="middle">
+                            <div class="right">
+                                <h3>WALLET BALANCE</h3>
+                                <h4>N1,113,750.00</h4>
+                            </div>
+                            <small class="text-muted">Fund Wallet</small>
                         </div>
-                        <small class="text-muted">Fund Wallet</small>
-                    </div>
-                   
-                </div>
-
-            </div>
-            <div class="available">
-                <div class="even">
-                    <h3>Available Investments</h3>
-                    <small>View All</small>
-                </div>
-                <div class="time">
-                <div class="palm">
-                    <span class="material-icons-outlined">credit_card</span>
-                    <p>Palm Oil</p>
-                    <h4>1000 Units/2500NGN</h4>
-                    <p>Expires:20/03/25</p>
-                
-                </div>
-                <div class="maize">
-                    <span class="material-icons-outlined">credit_card</span>
-                    <p>Maize</p>
-                    <h4>1000 Units/2500NGN</h4>
-                    <p>Expires:20/03/25</p>
-                
-                </div>
-                <div class="beans">
-                    <span class="material-icons-outlined">credit_card</span>
-                    <p>Beans</p>
-                    <h4>1000 Units/2500NGN</h4>
-                    <p>Expires:20/03/25</p>
-                
-                </div>
-                </div>
-            </div>
-            <section class="recent">
-                <div class="activity-grid">
-                <div class="activity-card">
-                    <h3>Recent activity</h3>
-
-                    <table border="1">
-                        <thead>
-                            <tr>
-                                <th>Recipient</th>
-                                <th>Transaction</th>
-                                <th>Date</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>palm oil</td>
-                                <td>25 Units 62,500 NGN</td>
-                                <td>2/4/2020</td>
-                                <td>
-                                    <span class="badge success">Completed</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Maize</td>
-                                <td>25 Units 62,500 NGN</td>
-                                <td>2/4/2020</td>
-                                <td>
-                                    <span class="badge success">Completed</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Yam</td>
-                                <td>25 Units 62,500 NGN</td>
-                                <td>2/4/2020</td>
-                                <td><span class="badge warning">Pending</span></td>
-                            </tr>
-                            <tr>
-                                <td>Palm oil</td>
-                                <td>25 Units 62,500 NGN</td>
-                                <td>2/4/2020</td>
-                                <td><span class="badge danger">Failed</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="summary">
-                    <div class="summary-card">
-
                     </div>
                 </div>
+                <div class="available">
+                    <div class="even">
+                        <h3>Available Investments</h3>
+                        <small>View All</small>
+                    </div>
+                    <div class="time">
+                        <div class="palm">
+                            <span class="material-icons-outlined"
+                                >credit_card</span
+                            >
+                            <!-- <span class="material-icons-outlined">circle</span> -->
+                            <!-- <div class="invest-title"> -->
+                            <small
+                                >Palm Oil
+
+                                <div class="green-circle"></div>
+                            </small>
+                            <!-- </div> -->
+                            <h4>10000 Units/2500NGN</h4>
+                            <p>Expires:20/03/25</p>
+                            <div class="white-box">
+                                <img src="/images/mastercard.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="maize">
+                            <span class="material-icons-outlined">
+                                credit_card
+                            </span>
+                            <small
+                                >Maize
+                                <div class="green-circle"></div>
+                            </small>
+                            <h4>10000 Units/2500NGN</h4>
+                            <p>Expires:20/03/25</p>
+                            <div class="white-box">
+                                <img src="/images/mastercard.png" alt="" />
+                            </div>
+                        </div>
+                        <div class="beans">
+                            <span class="material-icons-outlined"
+                                >credit_card</span
+                            >
+                            <small
+                                >Beans
+                                <div class="green-circle"></div>
+                            </small>
+                            <h4>10000 Units/2500NGN</h4>
+                            <p>Expires:20/03/25</p>
+                            <div class="white-box">
+                                <img src="/images/mastercard.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="recent">
+                    <div class="activity-grid">
+                        <div class="activity-card">
+                            <h3>Recent Transactions</h3>
+                            <small>View All</small>
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>RECIPENT</th>
+                                        <th>TRANSACTION</th>
+                                        <th>DATE</th>
+                                        <th>STATUS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>palm Oil</td>
+                                        <td>25 Units 62,500 NGN</td>
+                                        <td>2/4/2020</td>
+                                        <td>
+                                            <div class="badge success">
+                                                Completed
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maize</td>
+                                        <td>25 Units 62,500 NGN</td>
+                                        <td>2/4/2020</td>
+                                        <td>
+                                            <div class="badge success">
+                                                Completed
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yam</td>
+                                        <td>25 Units 62,500 NGN</td>
+                                        <td>2/4/2020</td>
+                                        <td>
+                                            <div class="badge warning">
+                                                Pending
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Palm Oil</td>
+                                        <td>25 Units 62,500 NGN</td>
+                                        <td>2/4/2020</td>
+                                        <td>
+                                            <div class="badge danger">
+                                                Failed
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <div class="right">
+                <div class="top">
+                    <span class="material-icons-outlined">notifications</span>
+                    <span class="material-icons-outlined">person</span>
+                    <small>Toby Okeke</small>
+                    <span class="material-icons-outlined">expand_more</span>
+                </div>
+                <div class="currency">
+                    <h3>Estimator</h3>
+                    <div class="flag">
+                        <div class="number">
+                        <small>You invest</small>
+                        <h4 class="thousand">1,000</h4>
+                    </div>
+                        <img class="line" src="/images/Line 19.png">
+                        <img class="nigerian" src="/images/download (1) 2.png"/>
+                        <h4 class="ngn">NGN</h4>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </div>
+                    <div class="separator">
+                        •
+                        •
+                        •
+                        •
+                    </div>
+                    <div class="dot subtraction">
+                        <div> - </div>
+                        <h5>into palm oil</h5>
+                        <p>in january 2022</p>
+                    </div>
+                    <div class="separator">
+                        •
+                        •
+                        •
+                        •
+                    </div>
+                    <div class="dot equals">
+                        <div> = </div>
+                        <h5>And make profit</h5>
+                    </div>
+                    <div class="separator">
+                        •
+                        •
+                        •
+                        •
+                    </div>
+                    <div class="dot divide">
+                        <div>÷</div>
+                        <p>by december 2022</p>
+                    </div>
+                    <div class="separator">
+                        •
+                        •
+                        •
+                        •
+                    </div>
+                    <div class="currency2"></div>
+                    <div class="flag2">
+                        <div class="number">
+                            <small>You Get</small>
+                            <h4 class="thousand">3,900</h4>
+                        </div>
+                        <img class="line" src="/images/Line 19.png" />
+                        <img class="nigerian"src="/images/download (1) 2.png" />
+                        <h4 class="ngn">NGN</h4>
+                        <span class="material-icons-outlined">expand_more</span>
+                    </div>
+                    <button type="button" onclick="">Invest now</button>
+                </div>
             </div>
-            </section>
-        </main>
-    </div>
-
-</body>
-
+            <div class="updates">
+                <div class="prophile-photo">
+                    <img src="/images/Oval.png" />
+                    <h5>Toby Okeke</h5>
+                    <small>tobyokeke@gmail.com</small>
+                    <h6>COMPLETE PROFILE</h6>
+                    <div class="refferal">
+                        <!-- <img class="shape"src="/images/Shape.png" alt=""> -->
+                        <p>Get 10% off on a Refferal</p>
+                        <h4 class="credit">Credited once they make a transfer</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

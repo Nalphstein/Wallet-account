@@ -9,121 +9,120 @@
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --card-padding: 1.8rem;
-
 }
 * {
+    margin-top: 0;
     margin-left: 0;
     outline: 0;
     appearance: none;
     border: 0;
     list-style: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
-html{
+html {
     font-size: 14pcs;
 }
-body{
-    width: 100vw;
+body {
+    width: 100%;
     height: 100vh;
-    font-family:'Times New Roman', Times, serif;
+    font-family: "monsorat";
     font-size: 0.88rem;
     background: whitesmoke;
     user-select: none;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
 }
 
-.container{
+.container {
     background-color: whitesmoke;
     display: grid;
     width: 100%;
     margin: 0;
-    gap: 1.8rem;
-    grid-template-columns: 14rem 46rem auto;
+    column-gap: 1rem;
+    grid-template-columns: 14rem 46rem 10rem;
 }
-a{
+a {
     color: var(--color-light);
 }
 
-h1{
+h1 {
     font-weight: 800;
     font-size: 1.8rem;
-
 }
-h2{
+h2 {
     font-size: 3.4rem;
     color: white;
 }
 
-h3{
+h3 {
     font-size: 0.87rem;
 }
-h4{
+h4 {
     font-size: 0.8rem;
 }
-h5{
+h5 {
     font-size: 0.77rem;
 }
-small{
+small {
     font-size: 0.75rem;
 }
-.profile-photo{
+.profile-photo {
     width: 3rem;
     height: 3rem;
     border-radius: 60%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.text-muted{
+.text-muted {
     color: var(--color-info-dark);
 }
-p{
+p {
     color: var(--color-info-dark);
 }
 /* b{
 
 } */
-.primary{
+.primary {
     color: var(--color-primary);
-
 }
-.danger{
+.danger {
     color: var(--color-danger);
 }
-.success{
+.success {
     color: var(--color-success);
 }
-.warning{
+.warning {
     color: var(--color-warning);
 }
 
-aside{
-    height: 100vh;
+aside {
+    /* height: 100vh; */
     background: navy;
-    top: 3rem;
+    /* top: 3rem; */
 }
 
-aside h2{
+aside h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
     font-size: 3rem;
     letter-spacing: -5px;
     text-align: center;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     width: 100%;
 }
 
-aside .sidebar{
+aside .sidebar {
     background: navy;
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
-    height: 96vh;
+    margin-left: 2rem;
+    height: 100vh;
     position: relative;
-    top: 1rem;
-    
+    /* top: 1rem; */
 }
-aside .sidebar-button button{
+aside .sidebar-button button {
     display: flex;
     align-items: center;
     justify-self: center;
@@ -131,202 +130,250 @@ aside .sidebar-button button{
     line-height: 20px;
     color: var(--color-background);
     cursor: pointer;
-    height: 30px;
-    width: 155px;
+    height: 2rem;
+    width: 10rem;
     border-radius: 0.2rem;
-    padding: 5px;
+    padding: 1rem;
     padding-right: 20%;
     padding-left: 20%;
     background-color: #3cb371;
-    
-    
+    font-size: 0.8rem;
 }
-aside h3{
+aside h3 {
     display: block;
     font-weight: 100;
     text-align: center;
-}    
+}
 
-aside .sidebar a{
+aside .sidebar a {
     color: whitesmoke;
     margin-top: 0.7rem;
-    gap: 5rem;
-    height: 1.5rem;
-    width: 7rem;
+    text-decoration: none;
+    /* text-align: c; */
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+    /* height: 1.5rem; */
+    /* margin-bottom: 1.5rem; */
     cursor: pointer;
-   
-
 }
 
-aside .sidebar a span{
-    display: block;
-    margin-bottom: -1.45em ;
-    font-size: 0.6rem;
+aside .sidebar a span {
+    /* display: block; */
+    /* margin-bottom: -1.45em; */
+    font-size: 1rem;
 }
-aside .sidebar a:last-child{
-    position: relative;
-    flex-direction: column;
-    bottom: -10rem;
+
+aside .sidebar a:last-child {
+    /* position: absolute; */
+    /* flex-direction: column; */
+    /* /* bottom */
+    margin-top: 10rem;
 }
-aside .sidebar a:last-child img{
+aside .sidebar a:last-child img {
+    margin-left: -4rem;
+    margin-top: 0.7rem;
     filter: brightness(0.5);
 }
-aside .sidebar a:last-child button{
+aside .sidebar a:last-child button {
     width: 113px;
-    background-color:navy;
+    background-color: navy;
     border: 1px solid white;
     color: white;
     padding: 10px 5px;
     text-align: center;
     font-size: 11.9px;
     border-radius: 17px;
-    margin: 1rem -2rem;
+    /* margin-top: 5rem; */
 }
 
+.navlink {
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+    /* font-size: 0.2rem; */
+}
+
+/* .sign-out {
+    margin-top: 2rem;
+} */
 
 /* ############################### MAIN ####################### */
-main{
+main {
     margin-top: 1.4rem;
-    width: 670px;
-    overflow: hidden;
+    width: 40.5rem;
+    /* overflow: scroll; */
 }
-main .investments{
+.Dashboard{
+    /* filter: brightness(1.1); */
+    color: #879DAD;
+}
+.investments {
     display: grid;
-    height: 99px;
+    height: 6rem;
     width: auto;
     grid-template-columns: repeat(2, 1fr);
     gap: -2rem;
     margin-top: 1rem;
 }
 
-main .investments > div{
-    height: 110px;
-    width: 280px;
-    background:white;
+.investments > div {
+    height: 7rem;
+    width: 18rem;
+    background: white;
     padding: 3rem 1rem;
-    border-radius: 10px;
-
+    border-radius: 1rem;
 }
 
-main .investments > div span{
+main .investments > div span {
+    border-radius: 0.4rem;
     font-size: 2.6rem;
-    background-color:whitesmoke;
+    background-color: whitesmoke;
     border-color: grey;
     color: darkblue;
-    padding: 7px 9px;
+    padding: 0.5rem 0.4rem;
     margin-top: -1.5rem;
 }
-main .investments > div.wallet span{
+main .investments > div.wallet span {
     font-size: 2.6rem;
-    background-color:wheat;
+    background-color: wheat;
     border: 2px light;
     border-color: yellow;
     color: darkblue;
-    padding: 7px 9px;
+    padding: 0.5rem 0.4rem9px;
     margin-top: -1.5rem;
 }
-main .investments > div .middle{
+main .investments > div .middle {
     display: flex;
     position: relative;
     margin-bottom: -4rem;
     padding: 1rem;
     align-items: center;
 }
-main .investments > div .middle h3{
+main .investments > div .middle h3 {
     color: var(--color-info-dark);
     padding-left: 3rem;
     width: 100%;
     margin-bottom: 0.2rem;
     margin-top: -4rem;
 }
-main .investments > div .middle h4{
+main .investments > div .middle h4 {
+    font-size: 1.1rem;
     padding-left: 3rem;
     margin-bottom: 0rem;
-    margin-top: 0.76rem;
-    line-height: 2px;
+    margin-top: 0.5rem;
+    line-height: 0.2rem;
+    color: #080F50;
 }
-main .investments > div .middle small{
+.thirty-five{
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding-left: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.76rem;
+    line-height: 0.1rem;
+    color: #080F50;
+}
+
+main .investments > div .middle small {
     position: absolute;
     padding-left: 3rem;
     margin-bottom: 1rem;
     justify-content: left;
+    font-weight: bold;
+    color: #4A4B65;
+    text-decoration: underline;
 }
 
-main .available{
-    height: 220px;
+main .available {
+    height: 15rem;
     width: auto;
     position: relative;
-    background-color:white;
-    border: 5px light;
-    border-radius: 17px;
+    background-color: white;
+    border: 5rem;
+    border-radius: 1rem;
     display: grid;
     margin-top: 2rem;
-    gap: 2rem;
-    padding-left: 4px;
+    /* gap: 1rem; */
+    /* overflow-x: scroll; */
+    padding-left: 1rem;
 }
 
-main .available > div.even{
-    margin-bottom: 12rem;
+main .available > div.even {
     display: flex;
     color: navy;
+    margin-left: 1.2rem;
     align-items: center;
     justify-content: space-between;
 }
-
-main .available > div.even small{
-    margin-right: 30px;
+main .available > div.even small {
+    margin-top: -0.5rem;
+    margin-right: 2rem;
 }
 
-main .available> div.time{
-    height: 0.2rem;
-    width: 100px;
-    grid-template-columns: repeat(3,1fr);
+main .available > div.time {
+    /* height: 0.2rem; */
+    /* width: 100vw; */
+    padding-right: 1rem;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    overflow-x: scroll;
 }
 
-main .available > div.time > div.palm{
+main .available > div.time > div.palm {
     height: 130px;
     width: 226px;
-    margin-top: -13.5rem;
+    /* margin-top: -13.5rem; */
     margin-left: 1rem;
     margin-right: 2rem;
-    background: #6424FF;
+    background: #6424ff;
     padding: 0.5rem -0.2rem;
     border-radius: 10px;
 }
-main .available > div.time > div.palm small{
-    display: grid;
+
+.green-circle {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #43BB0C;
+    ;
+    /* margin-left: 4rem; */
+    /* border: white; */
+    border-radius: 0.6rem;
+    border-color: white;
+    border: solid;
+}
+
+main .available > div.time > div.palm small {
+    display: flex;
     margin-top: -1.23rem;
-    margin-right: 6rem;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    /* margin-right: -3rem; */
     margin-bottom: 1rem;
     color: white;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
 }
-main .available > div.time > div.palm span{ 
+main .available > div.time > div.palm span {
     margin-top: 12px;
     margin-left: 15px;
     font-size: 20px;
     filter: brightness(0.9);
     color: #ffff;
-   
 }
 
-main .available > div.time > div.palm h4{
+main .available > div.time > div.palm h4 {
     margin-top: 27px;
     margin-right: 15px;
     text-align: center;
     color: whitesmoke;
 }
-main .available > div.time > div.palm p{
+main .available > div.time > div.palm p {
     margin-top: 32px;
     margin-right: 62px;
     text-align: center;
     color: whitesmoke;
     font-size: 10.4px;
-
 }
-main .available > div.time > div.palm img{
+main .available > div.time > div.palm img {
     display: flex;
     height: 15px;
     padding-top: 2px;
@@ -334,7 +381,7 @@ main .available > div.time > div.palm img{
     margin-top: -30px;
     margin-left: 4px;
 }
-main .available > div.time >div.palm > div.white-box{
+main .available > div.time > div.palm > div.white-box {
     margin-top: -20px;
     box-sizing: border-box;
     border-radius: 17px;
@@ -344,50 +391,49 @@ main .available > div.time >div.palm > div.white-box{
     background: white;
 }
 
-main .available > div.time > div.maize{
+main .available > div.time > div.maize {
     height: 130px;
     width: 226px;
     margin-top: -7.99rem;
     margin-left: 16.4rem;
-    margin-right:2rem;
-    background:#27AE60;
+    margin-right: 2rem;
+    background: #27ae60;
     /* filter: brightness(1.3); */
     padding-right: 2rem;
     border-radius: 10px;
 }
-main .available > div.time > div.maize small{
-    display: grid;
+main .available > div.time > div.maize small {
+    display: flex;
     margin-top: -1.23rem;
-    margin-right: 5rem;
+    margin-left: 3rem;
+    margin-right: -1rem;
+    /* margin-right: -3rem; */
     margin-bottom: 1rem;
     color: white;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
 }
-main .available > div.time > div.maize span{ 
+main .available > div.time > div.maize span {
     margin-top: 12px;
     margin-left: 12px;
     font-size: 20px;
     filter: brightness(0.9);
     color: #ffff;
-   
 }
 
-main .available > div.time > div.maize h4{
+main .available > div.time > div.maize h4 {
     margin-top: 27px;
     margin-right: -13px;
     text-align: center;
     color: whitesmoke;
 }
-main .available > div.time > div.maize p{
+main .available > div.time > div.maize p {
     margin-top: 32px;
     margin-right: 31px;
     text-align: center;
     color: whitesmoke;
     font-size: 10.4px;
-
 }
-main .available > div.time > div.maize img{
+main .available > div.time > div.maize img {
     display: flex;
     height: 15px;
     padding-top: 2px;
@@ -395,7 +441,7 @@ main .available > div.time > div.maize img{
     margin-top: -30px;
     margin-left: 4px;
 }
-main .available > div.time >div.maize > div.white-box{
+main .available > div.time > div.maize > div.white-box {
     margin-top: -20px;
     box-sizing: border-box;
     border-radius: 17px;
@@ -405,238 +451,409 @@ main .available > div.time >div.maize > div.white-box{
     background: white;
 }
 
-
-main .available > div.time> div.beans{
+main .available > div.time > div.beans {
     height: 130px;
     width: 226px;
     margin-top: -7.9rem;
     margin-left: 31.2rem;
-    background: #2F80ED;
+    background: #2f80ed;
     padding-right: 2rem;
     border-radius: 10px;
 }
 
-main .available > div.time > div.beans small{
-    display: grid;
+main .available > div.time > div.beans small {
+    display: flex;
     margin-top: -1.23rem;
-    margin-right: 4.1rem;
+    margin-left: 3rem;
+    margin-right: -1rem;
+    /* margin-right: -3rem; */
     margin-bottom: 1rem;
     color: white;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
 }
-main .available > div.time > div.beans span{ 
+main .available > div.time > div.beans span {
     margin-top: 12px;
     margin-left: 16px;
     font-size: 20px;
     filter: brightness(0.9);
     color: #ffff;
-   
 }
 
-main .available > div.time > div.beans h4{
+main .available > div.time > div.beans h4 {
     margin-top: 27px;
     margin-right: -29px;
     text-align: center;
     color: whitesmoke;
 }
-main .available > div.time > div.beans p{
+main .available > div.time > div.beans p {
     margin-top: 32px;
     margin-right: 18px;
     text-align: center;
     color: whitesmoke;
     font-size: 10.4px;
 }
-
-
-.recent{
-    margin-top: 2rem;
+main .available > div.time > div.beans img {
+    display: flex;
+    height: 15px;
+    padding-top: 2px;
+    border-radius: 19px;
+    margin-top: -30px;
+    margin-left: 4px;
 }
-.activity-card{
+main .available > div.time > div.beans > div.white-box {
+    margin-top: -20px;
+    box-sizing: border-box;
+    border-radius: 17px;
+    margin-left: 179px;
+    height: 16px;
+    width: 27px;
     background: white;
-    border-radius: 7px;
 }
 
-.activity-card h3{
-    color: gray;
-    margin: 1rem;
+.recent {
+    margin-top: 3rem;
 }
-.activity-card table{
-    width: 100%;
+.activity-card {
+    margin-top: 2rem;
+    height: 20rem;
+    background: white;
+    border-radius: 1rem;
+    padding-top: 2rem;
+}
+
+.activity-card h3 {
+    display: flex;
+    color: navy;
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+    align-items: center;
+    justify-content: start;
+    margin-top: -1rem;
+    /* margin-bottom: 5rem; */
+}
+.activity-card small {
+    display: flex;
+    color: navy;
+    margin-right: 2rem;
+    align-items: center;
+    justify-content: end;
+    margin-top: -2rem;
+}
+.activity-card table {
+    margin-top: 1rem;
+    margin-left: 0.6rem;
+    width: 39.8rem;
     border-collapse: collapse;
 }
-.activity-card thead{
-    background: #efefef;
-    text-align: left ;
+.activity-card thead {
+    padding-left: 3rem;
+    background: white;
+    text-align: left;
 }
-th, td{
-    font-size: .9rem;
-    padding: 1rem .5rem;
+th,td {
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    padding: 1rem 0.5rem;
     color: black;
 }
-td{
-    font-size: .85rem;
+td {
+    font-size: 0.85rem;
 }
-tbody tr:nth-child(even){
-    background: #f9fafc;
+tbody tr:nth-child(even) {
+    background: whitesmoke;
 }
-.badge{
-    padding: .2rem 1rem;
-    border-radius: 20px;
+.badge {
+    padding: 0.2rem 1rem;
+    border-radius: 0.4rem;
     font-weight: 700;
+    width: 7rem;
 }
-.badge.success{
-    background:#98fb98;
+.badge.success {
+    background: #98fb98;
     color: #3cb371;
     box-sizing: border-box;
     border: 1px solid #3cb371;
+    text-align: center;
+    /* border-width: 1rem; */
 }
 
-.badge.warning{
+.badge.warning {
+    /* width: 1.5rem; */
     background: #ffefd5;
-    color: black;
-    border: 1px solid #ffefd5;
+    color: #ffa615;
+    border: 1px solid #ffa615;
     box-sizing: border-box;
+    text-align: center;
+
 }
 
-.badge.danger{
-    background:#f08080;
-    color: black;
-    border: 1px solid #f08080;
+.badge.danger {
+    /* width: 1.5rem; */
+    text-align: center;
+    background: #fcb9b9;
+    color: #ff0000;
+    border: 1px solid #ff0000;
     box-sizing: border-box;
 }
-
 
 /*############### Right hand side###########################*/
 
-.right{
-    margin-top: 0.1rem;
-    width: 500px;
+.right {
+    /* margin-top: 0.1rem; */
+    /* width: 500px; */
+    width: 30rem;
 }
 
-.right .top{
+.right .top {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
     display: flex;
-    height:10px;
+    height: 10px;
     align-items: center;
     justify-content: end;
-
 }
 
-.right .top span{
+.right .top span {
     align-items: center;
     justify-content: space-between;
     font-size: 14px;
 }
-.right .top small{
-    color: var(--color-info-dark)
+.right .top small {
+    color: var(--color-info-dark);
 }
-.currency{
-    height: 280px;
-    width:380px;
+.currency {
+    height: 23rem;
+    width: 20rem;
     margin-top: 3.9rem;
-    margin-right: 4rem;
-    background-color:white;
-    border: 5px;
-    border-radius: 17px;
-    gap: 1rem;
+    /* margin-right: 4rem; */
+    background-color: white;
+    border: 5rem;
+    border-radius: 1rem;
+    /* gap: 1rem; */
     padding-left: 14px;
 }
-.currency h3{
-    font-size: large;
+.currency h3 {
+    font-size: 1rem;
     color: gray;
 }
-.flag{
-    background-color:whitesmoke;
-    border: 2px;
-    border-radius: 12px;
+.flag {
+    background-color: whitesmoke;
+    border: 2rem;
+    border-radius: 0.4rem;
     display: flex;
-    margin-top: 2rem;
-    gap: 2rem;
-    padding-left: 4px;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    gap: 1rem;
+    padding-left: 1rem;
+    width: 16.9rem;
+    height: 3rem;
+}
+/* .number{
+
+} */
+.flag small{
+    display: flex;
+    text-align: center;
+    color: navy;
+    margin-top: 0.2rem;
+    
+
+}
+.thousand{
+    display: flex;
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: left;
+    color: gray;
+    filter: brightness(1.4);
+    /* width: 0.1rem; */
+    margin-top: 0.1rem;
+    margin-left: 0.3rem;
 }
 
-
-.flag2{
-    background-color:whitesmoke;
-    border: 2px;
-    border-radius: 12px;
+.line{
     display: flex;
-    margin-top: 2rem;
-    gap: 2rem;
-    padding-left: 2px;
-    margin-bottom: 1.5rem;
+    margin-top: 0.7rem;
+    margin-left:4rem;
+    margin-right: -2rem;
+    padding-left: 1rem;
+    height: 2rem;
+    align-items: center;
+}
+.nigerian{
+    display: flex;
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+    margin-right: -0.5rem;
+    height: 1rem;
+    /* align-items: center;
+    justify-content: center; */
+}
+.ngn{
+    display: flex;
+    /* align-items: center; */
+    margin-top: 1.2rem;
+    margin-right: -2rem;
+    padding-right: 5rem;
+    /* padding-left:1rem; */
+}
+.flag span{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: -4rem;
+    /* padding-right: 9rem; */
 }
 
-.currency button{
+.flag2 {
+    background-color: whitesmoke;
+    border: 2rem;
+    border-radius: 0.4rem;
+    display: flex;
+    /* margin-top: 1.5rem; */
+    margin-left: 0.5rem;
+    gap: 1rem;
+    padding-left: 1rem;
+    width: 16.9rem;
+    height: 3rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.4rem;
+}
+.flag2 span{
+    display: flex;
+    margin-top: 1rem;
+    margin-left: -4rem;
+    /* padding-right: 9rem; */
+}
+
+.currency button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 1rem;
     margin-bottom: 2rem;
-    line-height: 20px;
     color: var(--color-background);
     cursor: pointer;
+    height: 2.5rem;
     border-radius: 0.2rem;
-    padding: 5px;
-    padding-right: 20%;
-    padding-left: 20%;
-    background-color: lightgreen;
+    padding: 1rem;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    background-color: #3cb371;
+    font-size: 0.8rem;
 }
 
-.updates{
+.updates {
     display: flex;
-    height: 320px;
-    width: 21.7rem;
-    margin-top: -26rem;
-    margin-left: 66rem;
-    padding-top: 3rem;
+    height: 17rem;
+    width: 20rem;
+    margin-top: -27rem;
+    margin-left: 62rem;
+    border-radius: 0.7rem;
+    padding-top: 1.2rem;
     padding-bottom: 2rem;
     padding-right: 12rem;
-    padding-left: 4rem;
+    padding-left: 6rem;
     background: white;
 }
-.updates .profile-photo img{
+.updates .profile-photo{
     display: flex;
-    align-items: center;
-    justify-content: center
-}
-.updates h5{
-    color: var(--color-info-dark);
-    text-align: center;
-}
-.updates small{
-    display: flex;
-    color: var(--color-info-dark);
-    text-align: center;
-    margin-top: -.78rem;
-}
-.updates h6{
-    border-color: gray;
-    background:gray;
-    border-radius: 20px;
-    margin-bottom: 2rem;
-    line-height: 20px;
-    padding: 5px;
-    box-shadow: inset;
-}
-.refferal{
-    display: block;
-    width: 200px;
-    border: 3rem;
-    border-radius: 17px;
-    background: darkblue;
-    margin: 1rem -2rem;
-}
-.refferal p{
-    display: flex;
+    /* margin-left: 3rem; */
     align-items: center;
     justify-content: center;
-    color: whitesmoke;
-    width: 100%;
 }
-.refferal small{
+.updates h5 {
+    margin-top: 1rem;
+    color: rgba(192, 192, 245, 0.964);
+    filter: brightness(0.5);
+    text-align: center;
+}
+.updates small {
     display: flex;
-    padding-right: -6rem;
+    color: rgba(192, 192, 245, 0.964);
+    filter: brightness(0.5);
+    text-align: center;
+    margin-top: -0.9rem;
+}
+.updates h6 {
+    height: 1.3rem;
+    border-color: rgba(192, 192, 245, 0.964);
+    background: rgba(192, 192, 245, 0.964);
+    filter: brightness(0.7);
+    border-radius: 0.5rem;
+    margin-top: 0.9rem;
+    margin-bottom: 2rem;
+    padding-top: 0.3rem;
+    padding-left: 0.9rem;
+    box-shadow: inset;
+}
+.refferal {
+    display: flex;
+    flex-direction:column;
+    /* column-gap: -1rem; */
+    width: 21rem;
+    height: 6rem;
+    border: 3rem;
+    border-radius: 1rem;
+    filter: brightness(1.2);
+    background-image: url("/images/Shape.png");
+    background-color: #080F50;
+    margin-right: -29rem;
+    margin-left: -6.5rem;
+}
+.refferal p {
+    display: flex;
+    text-align: center;
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 1.4rem;
+    margin-left: 4.5rem;
+    
+    /* width: 15rem; */
+}
+.credit {
+    display: flex;
+    font-size: 0.7rem;
+    font-weight: 100;
+    margin-top: -0.31rem;
+    margin-left: 4.5rem;
+    text-align:center;
+    color: white;
+}
+
+.separator {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    height: 0.5rem;
+    width: 2rem;
+    transform: rotate(90deg);
+}
+
+.dot {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.dot div {
+    display: flex;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 0.3rem;
+    margin-left: 2.1rem;
+    height: 0.9rem;
+    width: 1rem;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.dot h5 {
+    color: gray;
+}
+.dot p{
+    filter: brightness(1.5);
     align-items: center;
-    color: whitesmoke;
-    width: 100%;
+    font-size: 0.6rem;
 }
