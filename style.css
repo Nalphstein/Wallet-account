@@ -1,11 +1,8 @@
 :root {
     --color-primary: darkblue;
     --color-background: white;
-    --color-success: lightgreen;
     --color-light: white;
     --color-info-dark: grey;
-    --color-danger: red;
-    --color-warning: yellow;
     --card-border-radius: 2rem;
     --border-radius-1: 0.4rem;
     --card-padding: 1.8rem;
@@ -22,11 +19,11 @@
 }
 
 html {
-    font-size: 14pcs;
+    font-size: 1.1rem;
 }
 body {
     width: 100%;
-    height: 100vh;
+    height: 50rem;
     font-family: "monsorat";
     font-size: 0.88rem;
     background: whitesmoke;
@@ -86,15 +83,7 @@ p {
 .primary {
     color: var(--color-primary);
 }
-.danger {
-    color: var(--color-danger);
-}
-.success {
-    color: var(--color-success);
-}
-.warning {
-    color: var(--color-warning);
-}
+
 
 aside {
     /* height: 100vh; */
@@ -106,7 +95,7 @@ aside h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: whitesmoke;
     font-size: 3rem;
-    letter-spacing: -5px;
+    letter-spacing: -0.3rem;
     text-align: center;
     margin-top: 3rem;
     margin-bottom: 1rem;
@@ -127,7 +116,7 @@ aside .sidebar-button button {
     align-items: center;
     justify-self: center;
     margin-bottom: 2rem;
-    line-height: 20px;
+    line-height: 20rem;
     color: var(--color-background);
     cursor: pointer;
     height: 2rem;
@@ -170,7 +159,7 @@ aside .sidebar a:last-child {
     margin-top: 10rem;
 }
 aside .sidebar a:last-child img {
-    margin-left: -4rem;
+    margin-left: -2rem;
     margin-top: 0.7rem;
     filter: brightness(0.5);
 }
@@ -179,10 +168,10 @@ aside .sidebar a:last-child button {
     background-color: navy;
     border: 1px solid white;
     color: white;
-    padding: 10px 5px;
+    padding: 0.6rem 0.6rem;
     text-align: center;
-    font-size: 11.9px;
-    border-radius: 17px;
+    font-size: 0.6rem;
+    border-radius: 1rem;
     /* margin-top: 5rem; */
 }
 
@@ -212,7 +201,6 @@ main {
     height: 6rem;
     width: auto;
     grid-template-columns: repeat(2, 1fr);
-    gap: -2rem;
     margin-top: 1rem;
 }
 
@@ -239,7 +227,7 @@ main .investments > div.wallet span {
     border: 2px light;
     border-color: yellow;
     color: darkblue;
-    padding: 0.5rem 0.4rem9px;
+    padding: 0.5rem 0.4rem;
     margin-top: -1.5rem;
 }
 main .investments > div .middle {
@@ -320,14 +308,14 @@ main .available > div.time {
 }
 
 main .available > div.time > div.palm {
-    height: 130px;
-    width: 226px;
+    height: 7rem;
+    width: 14rem;
     /* margin-top: -13.5rem; */
     margin-left: 1rem;
     margin-right: 2rem;
     background: #6424ff;
     padding: 0.5rem -0.2rem;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .green-circle {
@@ -353,9 +341,9 @@ main .available > div.time > div.palm small {
     justify-content: space-between;
 }
 main .available > div.time > div.palm span {
-    margin-top: 12px;
-    margin-left: 15px;
-    font-size: 20px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1rem;
     filter: brightness(0.9);
     color: #ffff;
 }
@@ -392,15 +380,15 @@ main .available > div.time > div.palm > div.white-box {
 }
 
 main .available > div.time > div.maize {
-    height: 130px;
-    width: 226px;
-    margin-top: -7.99rem;
+    height: 7rem;
+    width: 14rem;
+    margin-top: -6.99rem;
     margin-left: 16.4rem;
     margin-right: 2rem;
     background: #27ae60;
     /* filter: brightness(1.3); */
     padding-right: 2rem;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 main .available > div.time > div.maize small {
     display: flex;
@@ -452,13 +440,13 @@ main .available > div.time > div.maize > div.white-box {
 }
 
 main .available > div.time > div.beans {
-    height: 130px;
-    width: 226px;
-    margin-top: -7.9rem;
+    height: 7rem;
+    width: 14rem;
+    margin-top: -6.9rem;
     margin-left: 31.2rem;
     background: #2f80ed;
     padding-right: 2rem;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 main .available > div.time > div.beans small {
@@ -605,19 +593,22 @@ tbody tr:nth-child(even) {
 }
 
 .right .top {
-    position: absolute;
-    top: 1rem;
-    right: 5rem;
+    position: relative;
+    top: 0.8rem;
+    right: 9rem;
     display: flex;
-    height: 10px;
+    height: 1rem;
     align-items: center;
     justify-content: end;
+    /* margin-rig: 24rem; */
 }
 
 .right .top span {
     align-items: center;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 1rem;
+    padding-left: 0.3rem;
+    
 }
 .right .top small {
     color: var(--color-info-dark);
@@ -625,7 +616,7 @@ tbody tr:nth-child(even) {
 .currency {
     height: 23rem;
     width: 20rem;
-    margin-top: 3.9rem;
+    margin-top: 1.9rem;
     /* margin-right: 4rem; */
     background-color: white;
     border: 5rem;
@@ -747,7 +738,7 @@ tbody tr:nth-child(even) {
     display: flex;
     height: 17rem;
     width: 20rem;
-    margin-top: -27rem;
+    margin-top: -23rem;
     margin-left: 62rem;
     border-radius: 0.7rem;
     padding-top: 1.2rem;
