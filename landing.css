@@ -1,0 +1,773 @@
+* {
+    margin-top: 0;
+    margin-left: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    list-style: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html {
+    font-size: 1.1rem;
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    height: auto;
+    font-family: "Mulish",sans-serif;
+    font-size: 0.88rem;
+    background: whitesmoke;
+    user-select: none;
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+}
+.container {
+    background-color: white;
+    display: flex;
+    width: auto;
+    margin: 0;
+    justify-content: space-between;
+    padding: 0rem 10rem;
+    /* column-gap: 1rem;
+    grid-template-columns: 14rem auto; */
+}
+.logo{
+    color: whitesmoke;
+    font-size: 1rem;
+    letter-spacing: -0.1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+    /* margin-bottom: 1rem; */
+    width: 1rem;
+
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    margin-top: 1.7rem;
+    /* margin-right: 3rem; */
+    /* padding-left: 2rem; */
+}
+.navbar a{
+    margin-top: 0.2rem;
+    text-decoration: none;
+    padding-left: 2.7rem;
+    font-weight: 700;
+    color: #919BB0;
+}
+.login{
+    color:black
+}
+.navbar button{
+    display: flex;
+    margin-top: -1rem;
+    align-items: center;
+    justify-self: center;
+    color: white;
+    cursor: pointer;
+    height: 3rem;
+    width: 9rem;
+    border-radius: 1.376rem;
+    padding-left: 1.5rem;
+    background-color:#080F50;
+    font-size: 0.9rem;
+    margin-left: 1.5rem;
+}
+
+.hero{
+    display: flex;
+    height: 46rem;
+    background-color: white;
+    text-align: center;
+    padding-left: 6rem;
+    column-gap: 4rem;
+    /* margin-left: 1rem; */
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+}
+.hero h1{
+    /* display: flex;
+    flex-direction: row; */
+    color: #4f4f4f;
+    text-align: start; 
+    margin-right: -29rem;
+    margin-top: 10rem;
+    padding-left: 5rem;
+    margin-left:4rem;
+    font-size: 3.6rem;
+}
+.hero p{
+    display: flex;
+    text-align: start;
+    margin-top: 26rem;
+    margin-right: 9rem;
+}
+
+.mouse-dropdown{
+    display: flex;
+    height: 3.7rem;
+    padding-top: 2rem;
+    /* border-radius: 1rem; */
+    margin-top: 35rem;
+    margin-right: 1rem;
+}
+.mouse{
+    margin-left: -35rem;
+    /* margin-right: -19rem; */
+}
+.material-icons-outlined{
+    margin-top: 1.9rem;
+    margin-left: -1.2rem;
+}
+
+
+.currency {
+    height: 21rem;
+    width: 89rem;
+    margin-top: 8.5rem;
+    margin-left: -16rem;
+    background-color: white;
+    border: 5rem;
+    border-radius: 1rem;
+    /* gap: 1rem; */
+    /* padding-right: 5rem; */
+}
+.flag {
+    background-color: whitesmoke;
+    border: 2rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: center; */
+    /* align-items: baseline; */
+    margin-top: 1.5rem;
+    margin-left: 7rem;
+    gap: 1rem;
+    padding-left: 1rem;
+    width: 28rem;
+    height: 3rem;
+}
+
+.currency-dropdown {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    /* margin-top: 1rem; */
+    /* gap: 1rem; */
+    /* margin-top: 1.5rem; */
+}
+
+/* .currency-dropdown:first-child {
+    margin-top: 0rem;
+} */
+
+/* .number{
+
+} */
+.flag small{
+    display: flex;
+    text-align: center;
+    color: navy;
+    margin-top: 0.2rem;
+    
+
+}
+.thousand{
+    display: flex;
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: left;
+    color: gray;
+    filter: brightness(1.4);
+    /* width: 0.1rem; */
+    margin-top: 0.1rem;
+    margin-left: 0.3rem;
+}
+
+.line{
+    /* display: flex;
+    margin-top: 0.7rem;
+    margin-left:4rem;
+    margin-right: -2rem;
+    padding-left: 1rem; */
+    height: 3rem;
+    align-items: center;
+    /* margin-right: 0.2rem; */
+}
+.dollars{
+    /* display: flex;
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+    margin-right: -0.5rem; */
+    height: 1rem;
+    margin-top: 1.2rem;
+    margin-left: 0.3rem;
+} 
+.nigerian{
+    /* display: flex;
+    margin-top: 1.2rem;
+    margin-left: 1.5rem;
+    margin-right: -0.5rem;
+    height: 1rem; */
+    /* align-items: center;
+    justify-content: center; */
+    height: 1rem;
+    margin-top: 1.2rem;
+    margin-left: 0.3rem;
+}
+.ngn{
+    margin-top: 1.2rem;
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin-top: 1.2rem;
+    margin-right: -2rem;
+    padding-right: 5rem; */
+    /* padding-left:1rem; */
+}
+.flag span{
+    margin-top: 1.1rem;
+    margin-left: 0rem;
+    /* display: flex;
+    margin-top: 1rem;
+    margin-left: -4rem; */
+    /* padding-right: 9rem; */
+}
+
+.flag2 {
+    background-color: whitesmoke;
+    border: 2rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-top: 1.5rem; */
+    margin-left: 7rem;
+    gap: 1rem;
+    padding-left: 1rem;
+    width: 28rem;
+    height: 3rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0.9rem;
+}
+.flag2 span{
+    margin-top: 1.1rem;
+    margin-left: 0rem;
+}
+
+.currency button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28rem;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+    color: white;
+    cursor: pointer;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    padding-right: 6rem;
+    padding-left: 7rem;
+    background-color: #080F50;
+    ;
+    font-size: 0.8rem;
+}
+.separator {
+    display: flex;
+    margin-top: 0.8rem;
+    margin-left: 9rem;
+    height: 0.2rem;
+    width: 2rem;
+    transform: rotate(90deg);
+}
+
+.dot {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.dot div {
+    display: flex;
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 0.3rem;
+    margin-left: 9.1rem;
+    height: 0.9rem;
+    width: 1rem;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.dot h5 {
+    color: gray;
+}
+.dot p{
+    filter: brightness(1.5);
+    align-items: center;
+    margin-top: 0.1rem;
+    font-size: 0.6rem;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 36rem;
+    margin-left: -15rem;
+    height: 3rem;
+}
+/* .masters{
+    margin-left: 9rem;
+} */
+/* .amazon{
+    padding-right: 3rem;
+} */
+/*#################################### MAIN SECTION #####################*/
+.main{
+    height: 40rem;
+    margin-top: 5rem;
+}
+.solid_text{
+    text-align: center;
+    font-size: 1.9rem;
+    color:#3B1D69;
+    font-weight: 700;
+}
+.security_text{
+    margin-top: -1.2rem;
+}
+.platform{
+    display: flex;
+    flex-direction: row;
+    column-gap: 13rem;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.thumbs_up{
+    /* display: flex; */
+    width: 11.75rem;
+    /* height: 22rem; */
+}
+
+.darkblue_rectangle{
+    position: absolute;
+    margin-left: -5.3rem;
+    padding-top: 3.5rem;
+    z-index: -2;
+}
+.light_rectangle{
+    position: absolute;
+    padding-top: 3.5rem;
+    margin-left: -4rem;
+    z-index: -2;
+   
+}
+
+/* .lock {
+    /* position: absolute; */
+    /* z-index: 8; */
+
+.dark_rectangle{
+    position: absolute;
+    margin-left: -3.9rem;
+    padding-top: 3.5rem;
+    z-index: -2;
+}
+.platform_text{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+    font-size: 0.9rem;
+    color: #3B1D69;
+    font-weight: 800;
+}
+.thumbs_up p{
+    font-weight: 800;
+}
+.main button {
+    display: flex;
+    justify-content: center;
+    width: 19.813rem;
+    margin-left: 33rem;
+    margin-top: 4rem;
+    color: white;
+    cursor: pointer;
+    height: 3rem;
+    border-radius: 0.6rem;
+    padding: 1rem 3rem;
+    background-color: #080F50;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/*########################################## Work section ##########################*/
+.works{
+    padding-top: 8rem;
+    background-color: white;
+    height: 44rem;
+
+}
+.work_text{
+    text-align: center;
+    font-size: 1.9rem;
+    color:#3B1D69;
+    font-weight: 700;
+}
+.simple_text{
+    font-size: 0.9rem;
+    margin-top: -1rem;
+}
+.steps{
+    display: flex;
+    flex-direction: row;
+    height: 14rem;
+    /* width: 48rem; */
+    column-gap: 3rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.steps-border{
+    border-radius: 0.4rem;
+    width: 17rem;
+    text-align: center;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    box-shadow: 0rem 0.3rem 1.875rem 0rem #B4BEC640;
+    /* border: 0.2rem solid; */
+    /* background: #F5F5F5; */
+    /* border-color: grey; */
+    padding: 2rem 3rem;
+    margin-top: -1.5rem;
+}
+.circle{
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #080F50;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    margin-left: 4rem;
+}
+.steps-border h4{
+    margin-top: 2rem;
+    color: #3B1D69;
+}
+
+/*###################################### SAFE SECTION #####################################*/
+.safe{
+    margin-top: 4rem;
+    height: 16rem;
+}
+.images_text{
+    display: flex;
+    margin-top: 6rem;
+    margin-left: 3rem;
+    justify-content: space-evenly;
+}
+.safe_text{
+    text-align: left;
+    padding-left: 6rem;
+    width: 22.8rem;
+    color: #3B1D69;
+    font-weight: 700;
+    font-size: 1.3rem;
+
+}
+.safe_text p{
+    margin-top: -0.9rem;
+    font-size: 0.9rem;
+    color: black;
+}
+.visible-card{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding-left: 11rem;
+    column-gap: 7rem;
+    height: 4rem;
+    /* font-size: 7.1rem; */
+}
+.card{
+    height: 5rem;
+}
+.safe_vector{
+    margin-top: 4rem;
+    width: 9rem;
+}
+
+/* ########################## Review Section ##################### */
+.review{
+    height: 39rem;
+    background-color: white;
+    margin-top: 1rem;
+    padding-top: 6rem;
+}
+.review_text{
+    text-align: center;
+}
+.review_text h3{
+    font-size: 2rem;
+    color:#3B1D69;
+    
+}
+.review_text p{
+    font-size: 0.75rem;
+    margin-right: 3rem;
+}
+.customers{
+    display: flex;
+    flex-direction: row;
+    height: 22rem;
+    width: 56rem;
+    column-gap: 1rem;
+    /* margin-top: 1rem; */
+    margin-left: 12rem;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-right: -11rem;
+}
+.customer-review{
+    border-radius: 0.6rem;
+    text-align: left;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    border: 0.1rem solid;
+    border-width:medium ;
+    border-color: whitesmoke;
+    padding: 2rem 1.6rem;
+    margin-top: 3rem;
+    line-height: 2rem;
+}
+.customer-details{
+    display: flex;
+    flex-direction: row;
+}
+.customer-image{
+    margin-top: 0.5rem;
+}
+.customer-details h5{
+    font-size: 1.2rem;
+}
+.customer-name small{
+    display: flex;
+    color: gray;
+    margin-top: -2.5rem;
+}
+.customer_circles{
+    display: flex;
+    margin-right: 6rem;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: center;
+}
+.customer-circle1{
+    background-color: #55DBFF;
+    margin-right: 4.8rem;
+    width:3rem;
+    height: 0.5rem;
+    border-radius: 4rem;
+}
+
+.customer-circle2{
+    background-color: #EAE9F2;
+    margin-left: -3.5rem;
+    width:1rem;
+    height: 0.5rem;
+    border-radius: 4rem;
+}
+
+
+/* ############################## FAQ section ################*/
+.faq{
+    margin-top: 8rem;
+    margin-left: 13rem;
+}
+
+.asked-questions h2{
+    font-size: 2.25rem;
+    color: #3B1D69;
+}
+.asked-questions p{
+    font-size: 0.875rem;
+    color: #5C5984;
+}
+.faq-tab{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 14rem;
+}
+.faq-tab p{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #4A4B65;
+}
+.faq-tab > div{
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+.bottom-border{
+        /* margin-left: -3.5rem; */
+        width:59.6rem;
+        /* height: 0.1rem; */
+        border-bottom: 0.063rem solid grey;
+        filter: brightness(1.7);
+}
+.help-tab{
+    display: flex;
+    /* flex-direction: row;
+    column-gap: 4rem; */
+    margin-top: 8rem;
+}
+.help-texts{
+    margin-top: 10rem;
+    margin-left: 9rem;
+}
+.help-texts h2{
+    font-size: 2rem;
+    color: #3B1D69;
+}
+.reach{
+    margin-top: -1.3rem;
+}
+.help-texts p{
+    font-weight: 700;
+}
+.hotline{
+    width:29rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.help-social{
+    margin-top: 2rem;
+    display: flex;
+    height: 1.813rem;
+    column-gap: 1.8rem;
+}
+
+.customer-care{
+    height: 39rem;
+    width: 44rem;
+    margin-left: 3rem;
+    /* width:23rem; */
+    padding-top: 7rem;
+    padding-left: 4.52rem;
+    background-color: #080F50;
+}
+
+/* ############################################## cONTACT-FOOTER SECTION ################################## */
+
+.contact-footer{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    column-gap: 5rem;
+    padding-top: 8rem;
+    padding-left: 10rem;
+}
+.copyrights{
+    margin-top: 2rem;
+    width: 22rem;
+}
+.copyrights p{
+    width: 22rem;
+    margin-left: -1.9rem;
+    font-weight: 800;
+}
+.copy{
+    font-size: 0.9rem;
+    color: #37393C;
+    font-weight: 800;
+}
+.established{
+    font-size: 1rem;
+    font-weight: 600;
+    color:#5F6872;
+}
+
+.footer_tab1{
+    display: flex;
+    flex-direction: row;
+   
+    margin-top: 2rem;
+    column-gap: 7rem;
+}
+.tab1{
+    display: flex;
+    text-decoration: none;
+    cursor:default;
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer_tab1 button{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 0.9rem;
+    margin-top: -0.4rem;
+    color: white;
+    cursor: pointer;
+    height: 3rem;
+    width: 10.25rem;
+    border-radius: 1.376rem;
+    padding-left: 2.4rem;
+    background-color:#080F50;
+    margin-left: 1.5rem;
+}
+
+.footer_tab2{
+    display: flex;
+}
+.tab_icon{
+    display: flex;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.footer-icon{
+    display: flex;
+    height: 0.9rem;
+    padding-left: 10rem;
+    column-gap: 1.8rem;
+}
+.bottom-border2{
+    /* margin-left: -3.5rem; */
+    width:44.125rem;
+    /* height: 0.1rem; */
+    border-bottom: 0.063rem solid grey;
+    filter: brightness(1.7);
+}
+.footer-tab3{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: row;
+    column-gap: 7rem;
+}
+.terms{
+    width: 10rem;
+}
+.fintech{
+    font-size: 0.9rem;
+    width: 19.625rem;
+    margin-left: -3rem;
+}
